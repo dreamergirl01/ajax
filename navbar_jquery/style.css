@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: midnightblue;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar{
+    width: 700px;
+    margin: auto;
+    padding: 8px;
+    margin: 50px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.navbar ul li{
+    display:inline-block; //membuat menunya satu baris
+    padding: 0px 10px;
+    width: 100px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.navbar ul li a{
+    color:#2a333b;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 10px;
+}
+
+.navbar ul li ul{
+    display: none; //membuat menunya tidak kelihatan
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.navbar ul li ul li{
+    display: block;
+}
+
+.navbar ul li ul li a{
+    color: #666666;
+    display: block;
+}
+
+.navbar ul li ul li a:hover{
+    background-color: seagreen;
+    color: white;
+    border-top:none;
+}
+.navbar ul li ul li a:active{
+    position: relative;
+    top: 1px;
+}
